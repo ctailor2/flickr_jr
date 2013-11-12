@@ -1,4 +1,4 @@
-source :rubygems
+source "https://rubygems.org"
 
 # PostgreSQL driver
 gem 'pg'
@@ -16,6 +16,10 @@ gem 'activerecord'
 gem 'rake'
 
 gem 'shotgun'
+
+# Use carrierwave and mini_magick to handle image uploads
+gem 'carrierwave'
+gem 'mini_magick'
 
 group :test do
   gem 'faker'
