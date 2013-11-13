@@ -4,7 +4,7 @@ end
 
 post '/upload' do
 	Photo.create(file: params["filename"])
-	redirect to ('/')
+	redirect to ('/photos')
 end
 
 get '/photos' do
