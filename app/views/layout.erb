@@ -19,5 +19,14 @@
 </head>
 <body>
   <%= yield %>
+  <div class="top-nav">
+    <a href="/" class="home-link">PhotoRepo</a>
+    <a href="/register">Register</a>
+    <% if logged_in? %>
+      <a href="/logout">Logout</a>
+    <% else %>
+      <a href="/login">Login</a>    
+    <% end %>
+  </div>
 </body>
 </html>

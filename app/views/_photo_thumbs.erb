@@ -1,0 +1,9 @@
+<div class="2x3">
+	<% photos.each do |photo| %>
+		<a class="thumb" href="/">
+			<div class="center-thumbnail">
+				<img src="<%= photo.file.thumb %>"/>
+			</div>
+		</a>
+	<% end %>
+</div>

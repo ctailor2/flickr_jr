@@ -1,7 +1,7 @@
 <div class="container">
-  <form action="/upload" method="POST" enctype="multipart/form-data">
-    <input type="file" name="filename"/>
-    <input type="submit" value="Upload"/>
-  </form>
+	<h3><a href="/albums">Albums</a></h3>
+	<%= erb :_album_thumbs, :locals => {:albums => albums} %>
 
+	<h3><a href="/photos">Photos</a></h3>
+	<%= erb :_photo_thumbs, :locals => {:photos => photos} %>
 </div>
